@@ -51,3 +51,20 @@ in a very machine optimized way.
 
 
 ... I'm going to explain further, for now I'm preparing and uploading the sources to github.
+
+
+
+... ...
+Ok. 
+........
+Need to tidy the sources. And the assembly files are obsolete.
+However, the implementation as itself is given in the subfolder "perl".
+
+I guess I'm going to rewrite the whole thingy in C, again.
+I got the result back then, implementing in Assembly won't easily give a performance gain;
+you have to optimize machine dependent, and the gain is hardly more than 30 percent. 
+
+In turn, surprisingly, perl is nearly as fast as C. Although I've to say,
+Admittedly I added a "memory storage type" to perl, which is a linked list written in C;
+Using generic arrays in perl doesn't scale up to bigger datasets.
+
