@@ -28,10 +28,10 @@ memory and caches usage also in terms of access patterns, and prediction hits.
 
 Firstly, the algorithm utilizes the "test" instruction.
 This instruction tests a selectable bit of an address in memory.
-Surprisingly, this instruction is cheap in terms of cpu cycles on most architectures.
+The instruction is surprisingly cheap in terms of cpu cycles on most architectures.
 (Compare, e.g., aigner) 
-For most cpu's the instruction needs 1/3 cpu cycles, INDEPENDENT of the operator (register or memory)
-Other sorting implementations either do a cmp, or copy the memory data into a register - 
+For most cpu's the instruction needs 1/3 cpu cycles, INDEPENDENT of the operator (register or memory).
+Other sorting implementations either do a cmp, or copy the data from memory into a register - 
 both cases are slower than test.
 
 
