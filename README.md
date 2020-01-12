@@ -68,3 +68,13 @@ In turn, surprisingly, perl is nearly as fast as C. Although I've to say,
 Admittedly I added a "memory storage type" to perl, which is a linked list written in C;
 Using generic arrays in perl doesn't scale up to bigger datasets.
 
+
+ATM I'm somehow bored by trying to understand, what the heck I did.
+Going to start from scratch. :/ soon. :[
+There are implementations in C and Assembly - but, how did I work out the benchmarks??
+And I've some other work to do.
+
+Im pushing more sources onto my stack, and onto github.
+
+
+

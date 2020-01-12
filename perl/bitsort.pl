@@ -81,8 +81,8 @@ for my $n( 500,1000,5000 ){
 	print "Count: $n    Max: $max\n";
 	prove( "bitsort", \@list, bitsort::bitsort(@list));
 	bitsort::cmp_bitsort(@list);
-	#timethese( 10, {qsort=>sub{qsort(@list)}, movesort=>sub{movesort(@list)}, bitsort=>sub{bitsort(@list)}} );
-#	timethese( 50, {qsort=>sub{qsort(@list)},  bitsort=>sub{bitsort(@list)}} );
+	#timethese( 10, {qsort=>sub{qsort(@list)}, movesort=>sub{movesort(@list)}, bitsort=>sub{bitsort::bitsort(@list)}} );
+	#timethese( 50, {qsort=>sub{qsort(@list)},  bitsort=>sub{bitsort(@list)}} );
 }}; 
 exit 0;
 __DATA__
